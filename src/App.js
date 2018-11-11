@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Logo from './logo.svg' ;
 import './App.css';
-
+import Todolist from './todolist';
 import {Layout, Menu, Icon, Breadcrumb} from 'antd';
-import MenuItem from 'antd/lib/menu/MenuItem';
+
 
 const {SubMenu} = Menu;
 const {Header, Content, Footer, Sider} = Layout;
@@ -52,6 +51,7 @@ class App extends Component {
                   </Sider>
                   <Content style={{ padding: '0 24px'}}>
                           Content
+                          <Todolist  />
                   </Content>
               </Layout>
           </Content>
